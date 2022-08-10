@@ -64,3 +64,39 @@ button:hover {
     background-color: #30b9a7;
     color: #03fcff;
 }
+
+#inv_thesis {
+    margin-top: 190px;
+    padding-left: 175px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.animated-word {
+    position: fixed;
+    font: inherit;
+}
+.animated-word:nth-child(1){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+}
+
+.animated-word:nth-child(2){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+@keyframes fade{
+    0%,50% {
+      opacity: 0;
+}
+    100%{
+      opacity: 1;
+  }
+}
